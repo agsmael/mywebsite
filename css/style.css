@@ -129,3 +129,34 @@ a:hover {
 a:active {
     color: #000000;
 }
+
+/*styles martin*/
+.projects_content_wrapper{
+	width: 500px;
+}
+.project{
+	cursor: pointer;
+}
+#projects_content{
+	margin: 0;
+	max-width: 0;
+	overflow: hidden;
+	position: relative;
+	
+	transition: max-width .5s ease-in 0s;
+	-webkit-transition: max-width .5s ease-in 0s;
+	-moz-transition: max-width .5s ease-in 0s;
+	-ms-transition: max-width .5s ease-in 0s;
+}
+#projects_content.panel_opended{
+	margin: 0 20px 0 0;
+	max-width: 500px;
+}
+.panel_closebutton{
+	background: none;
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
