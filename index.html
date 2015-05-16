@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	
+	<title>mael g.</title>
+	
+	<link rel="stylesheet" href="css/style.css">
+    <link href="img/favicon.ico" rel="shortcut icon">
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
+	<script>
+	$(function(){
+		$("#page-wrap").wrapInner("<table cellspacing='30'><tr>");
+		$(".post").wrap("<td></td>");
+		$("body").mousewheel(function(event, delta) {
+			this.scrollLeft -= (delta * 30);
+			event.preventDefault();
+		});   
+	});
+	</script>
+</head>
+
+<body>
+
+	<div id="page-wrap">
+
+        <div class="post" id="contact">
+            <p>mael gonzalez</p>
+            <p>tel +33 (0)6 61 61 81 72</p>
+            <p>mail contact@mael-gonzalez.com</p>
+            <p style="display: inline-block;">curriculum vitae</p><a href="#" style="display: inline-block;">fr</a><a href="#" style="display: inline-block;">en</a>
+        </div>
+		
+		<div class="post" id="bio">
+			<h2>bio</h2>
+            <p>french game & multimedia developer</p>
+            <img src="img/profile_pic_mael.jpg">
+			<p>games, skate, books, meditation, cinema, music, martial arts</p>
+		</div>
+		
+		<div class="post" id="projects">
+			<h2>projects</h2>
+            <div class="project"><p>Little Heroes</p></div>
+            <div class="project"><p>Little Heroes</p></div>
+            <div class="project"><p>Little Heroes</p></div>
+            <div class="project"><p>Little Heroes</p></div>
+		</div>
+
+        <div class="post">
+            <h3>efsefse</h3>
+            <p>efsfefezf</p>
+        </div>
+
+        <div class="post" id="tech">
+            <h2>tech blogs</h2>
+            <p>coming soon...</p>
+        </div>
+
+		<div class="post" id="experiences">
+			<h2>experiences</h2>
+            <p><span>08-2012 / 06-2015 :</span> multimedia developer at <a href="http://www.avant-gout.com/">Avant-Gout Studios</a></p>
+            <p><span>10-2011 / 01-2012 :</span> intership at <a href="http://fr.techsoft3d.com/">Tech Soft 3D</a></p>
+            <p><span>07-2011 / 08-2011 :</span> VB developer at Infosurf</p>
+		</div>
+
+        <div class="post" id="education">
+            <h2>education</h2>
+            <p><span>2013 / 2015 :</span> Multimedia designer and developer (apprenticeship) – Ecole des Gobelins, Annecy, France</p>
+            <p><span>2012 / 2013 :</span> Professional Licence (apprenticeship) - Real Time 3D – Le Puy-En-Velay, France</p>
+            <p><span>2010 / 2012 :</span> Technology Degree – Information Technology – IUT Lyon 1, France</p>
+            <p><span>2009 / 2010 :</span> Licence 1 Math / Information Technology – Claude Bernard university, Lyon, France</p>
+            <p><span>2007 / 2009 :</span> Scientific baccalauréat with honours - Saint Priest, France</p>
+        </div>
+		
+		<div class="post" id="social">
+			<h2>social</h2>
+            <a href="https://fr.linkedin.com/pub/maël-gonzalez/46/22b/775">
+                <img src="img/linkedin.svg"/>
+            </a>
+
+            <a href="https://www.facebook.com/maellllllll">
+                <img src="img/facebook.png"/>
+            </a>
+
+            <a href="https://twitter.com/emperordub">
+                <img src="img/twitter.png"/>
+            </a>
+		</div>
+	
+	</div>
+	
+</body>
+
+</html>
+
